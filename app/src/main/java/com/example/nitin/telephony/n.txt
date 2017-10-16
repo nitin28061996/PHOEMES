@@ -1,0 +1,1 @@
+keytool -export -alias myAlias -keystore C:\Users\nitin\.android\myKeyStore | C:\openssl\bin\openssl sha1 -binary | C:\openssl\bin\openssl base64

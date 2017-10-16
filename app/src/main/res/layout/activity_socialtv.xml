@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.nitin.telephony.SOCIALTV">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="525dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/webView"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/webView"
+        android:background="@mipmap/fb"
+        android:onClick="fb" />
+
+    <Button
+        android:id="@+id/toggleButton2"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/webView"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toRightOf="@+id/toggleButton"
+        android:onClick="twitter"
+        android:background="@mipmap/twitter" />
+
+
+    <Button
+        android:id="@+id/toggleButton4"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/goo"
+        android:onClick="google"
+        android:layout_below="@+id/webView" />
+
+    <Button
+        android:id="@+id/toggleButton5"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="@mipmap/yt"
+        android:onClick="youtube"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/webView" />
+
+    <Button
+        android:id="@+id/toggleButton6"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:onClick="linkedin"
+        android:background="@mipmap/linkedin"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@+id/toggleButton5"
+        android:layout_toEndOf="@+id/toggleButton5"
+        android:layout_below="@+id/webView"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

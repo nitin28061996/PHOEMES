@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nitin.telephony">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="PHOEMES"
+        android:roundIcon="@mipmap/ic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeAcitivty2" />
+        <activity
+            android:name=".CALL"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MESSAGE"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".EMAIL"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".CONTACTS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WHATSAPP" />
+        <activity android:name=".SOCIALTV" />
+        <activity android:name=".googlesearch" />
+        <activity android:name=".login"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook"/>
+    </application>
+
+</manifest>
